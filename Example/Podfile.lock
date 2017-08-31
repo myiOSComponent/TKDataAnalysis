@@ -1,0 +1,37 @@
+PODS:
+  - CocoaLumberjack (3.2.1):
+    - CocoaLumberjack/Default (= 3.2.1)
+    - CocoaLumberjack/Extensions (= 3.2.1)
+  - CocoaLumberjack/Default (3.2.1)
+  - CocoaLumberjack/Extensions (3.2.1):
+    - CocoaLumberjack/Default
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - Kiwi (2.4.0)
+  - TKDataAnalysis (0.0.1):
+    - CocoaLumberjack
+  - TKMiddleware (0.0.1)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - Kiwi
+  - TKDataAnalysis (from `../`)
+  - TKMiddleware (~> 0.0.1)
+
+EXTERNAL SOURCES:
+  TKDataAnalysis:
+    :path: ../
+
+SPEC CHECKSUMS:
+  CocoaLumberjack: 2800c03334042fe80589423c8d80e582dcaec482
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  Kiwi: f49c9d54b28917df5928fe44968a39ed198cb8a8
+  TKDataAnalysis: 73b1707a083d530a68237b4d12f1d8c23a3dad8b
+  TKMiddleware: e4152543d955825c3a8a6f68eaefbfebca2292c7
+
+PODFILE CHECKSUM: b794f866d32bed39fd857e0eef99ecd7b141b7ba
+
+COCOAPODS: 1.3.1

@@ -1,12 +1,19 @@
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/myiOSComponent/myRepo.git'
+platform :ios, '8.0'
+inhibit_all_warnings!
 use_frameworks!
 
 target 'TKDataAnalysis_Example' do
   pod 'TKDataAnalysis', :path => '../'
-
+  pod 'TKMiddleware', '~> 0.0.1'
+  
   target 'TKDataAnalysis_Tests' do
     inherit! :search_paths
 
     pod 'Kiwi'
-  pod 'FBSnapshotTestCase'
+    pod 'FBSnapshotTestCase'
+    pod 'TKMiddleware', '~> 0.0.1'
+    
   end
 end

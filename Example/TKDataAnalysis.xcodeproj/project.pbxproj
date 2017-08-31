@@ -61,12 +61,12 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8D3D0931EC38CE21FE1E97CA /* Pods-TKDataAnalysis_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TKDataAnalysis_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TKDataAnalysis_Tests/Pods-TKDataAnalysis_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		93D03C20E8910F4A68D8C92F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		93D03C20E8910F4A68D8C92F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		BCFC255FBF5A344BE7A1567E /* Pods_TKDataAnalysis_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TKDataAnalysis_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD827DB8E65C40FD8B6469F6 /* Pods-TKDataAnalysis_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TKDataAnalysis_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TKDataAnalysis_Tests/Pods-TKDataAnalysis_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		CF95D904E078FBCD7C87D580 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		CF95D904E078FBCD7C87D580 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		EC71A90C83AEE43E617C6B16 /* Pods_TKDataAnalysis_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TKDataAnalysis_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FB2628095D20123C06F72F7D /* TKDataAnalysis.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = TKDataAnalysis.podspec; path = ../TKDataAnalysis.podspec; sourceTree = "<group>"; };
+		FB2628095D20123C06F72F7D /* TKDataAnalysis.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = TKDataAnalysis.podspec; path = ../TKDataAnalysis.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -250,6 +250,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "512869343@qq.com";
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = U4Y34TYPKR;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -304,11 +307,15 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TKDataAnalysis_Example/Pods-TKDataAnalysis_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
 				"${BUILT_PRODUCTS_DIR}/TKDataAnalysis/TKDataAnalysis.framework",
+				"${BUILT_PRODUCTS_DIR}/TKMiddleware/TKMiddleware.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TKDataAnalysis.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TKMiddleware.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -373,11 +380,13 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TKDataAnalysis_Tests/Pods-TKDataAnalysis_Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/TKMiddleware/TKMiddleware.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSnapshotTestCase/FBSnapshotTestCase.framework",
 				"${BUILT_PRODUCTS_DIR}/Kiwi/Kiwi.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TKMiddleware.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSnapshotTestCase.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kiwi.framework",
 			);
@@ -538,6 +547,7 @@
 			baseConfigurationReference = 3E2A3E795726C8F6BD7EB545 /* Pods-TKDataAnalysis_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = U4Y34TYPKR;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TKDataAnalysis/TKDataAnalysis-Prefix.pch";
 				INFOPLIST_FILE = "TKDataAnalysis/TKDataAnalysis-Info.plist";
@@ -553,6 +563,7 @@
 			baseConfigurationReference = 3CAC70FDAD28043CEA3F17BF /* Pods-TKDataAnalysis_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = U4Y34TYPKR;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TKDataAnalysis/TKDataAnalysis-Prefix.pch";
 				INFOPLIST_FILE = "TKDataAnalysis/TKDataAnalysis-Info.plist";

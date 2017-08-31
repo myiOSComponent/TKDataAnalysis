@@ -1,0 +1,6 @@
+framework module Pods_TKDataAnalysis_Tests {
+  umbrella header "Pods-TKDataAnalysis_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

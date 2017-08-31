@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TKDataAnalysis'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of TKDataAnalysis.'
+  s.version          = '0.0.1'
+  s.summary          = '数据分析工具.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,10 +18,10 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+数据分析工具，现有功能为：日志，bug收集，后期根据需要增加打点功能.
                        DESC
 
-  s.homepage         = 'https://github.com/512869343@qq.com/TKDataAnalysis'
+  s.homepage         = 'https://github.com/thinkWind'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '512869343@qq.com' => '512869343@qq.com' }
@@ -37,6 +37,9 @@ TODO: Add long description of the pod here.
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.frameworks = 'SystemConfiguration', 'Security'
+  s.libraries = 'c++', 'z'
+  s.vendored_frameworks = "TKDataAnalysis/Framework/Bugly.framework"
+  #s.vendored_frameworks = "TKDataAnalysis/Framework/Bugrpt.framework"
+  s.dependency 'CocoaLumberjack'
 end

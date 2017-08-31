@@ -1,0 +1,36 @@
+{
+  "name": "TKDataAnalysis",
+  "version": "0.0.1",
+  "summary": "A short description of TKDataAnalysis.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/thinkWind",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "512869343@qq.com": "512869343@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/512869343@qq.com/TKDataAnalysis.git",
+    "tag": "0.0.1"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "TKDataAnalysis/Classes/**/*",
+  "frameworks": [
+    "SystemConfiguration",
+    "Security"
+  ],
+  "libraries": [
+    "c++",
+    "z"
+  ],
+  "vendored_frameworks": "TKDataAnalysis/Framework/Bugly.framework",
+  "dependencies": {
+    "CocoaLumberjack": [
+
+    ]
+  }
+}

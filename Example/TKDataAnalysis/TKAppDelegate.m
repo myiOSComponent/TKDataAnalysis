@@ -7,6 +7,7 @@
 //
 
 #import "TKAppDelegate.h"
+#import <TKDataAnalysis/TKLogSystem.h>
 
 @implementation TKAppDelegate
 
